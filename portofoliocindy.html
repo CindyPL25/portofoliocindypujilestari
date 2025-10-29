@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Cindy Puji Lestari</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">CINDY</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Tentang Saya</a></li>
+          <li><a href="#achievements">Pencapaian</a></li>
+          <li><a href="#gallery">Galeri</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Cindy Puji Lestari</h1>
+        <p>Halo, aku Cindy. Anak pertama dari tiga bersaudara sekaligus satu-satunya perempuan di keluarga. 
+          Saat ini aku sedang menempuh kuliah di jurusan Informatika, Aku saat ini sedang belajar banyak tentang teknologi dan pengembangan website. 
+          Meski tantangan nggak sedikit, aku percaya langkah kecil hari ini bisa jadi jalan menuju masa depan yang lebih baik. 
+          Semoga aku bisa berhasil dan membanggakan orang-orang yang aku sayangi.</p>
+        <a href="#about" class="btn">Tentang Saya</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="img/aku.png" alt="Foto Cindy">
+      </div>
+      <div class="about-content">
+        <h2 class="section-title">Tentang Saya</h2>
+        <p>
+          Perkenalkan, saya <b>Cindy Puji Lestari</b>, mahasiswa Informatika yang menyukai dunia teknologi, desain, dan pengembangan website.
+          Saya memiliki passion dalam menciptakan desain estetik dengan nuansa pastel dan menggabungkannya dengan fungsi yang rapi.
+        </p>
+
+        <!-- Tabs -->
+        <div class="tab-container">
+          <!-- radio inputs harus menjadi sibling langsung dari konten agar selector CSS ~ bekerja -->
+          <input type="radio" name="tabs" id="tab-hobby" class="tab-input" checked>
+          <input type="radio" name="tabs" id="tab-experience" class="tab-input">
+          <input type="radio" name="tabs" id="tab-education" class="tab-input">
+
+          <div class="tabs">
+            <label for="tab-hobby" class="tab-label">Hobi</label>
+            <label for="tab-experience" class="tab-label">Pengalaman</label>
+            <label for="tab-education" class="tab-label">Pendidikan</label>
+          </div>
+
+          <!-- Isi Tab Hobi -->
+          <div id="hobby" class="tab-content">
+            <h3><i class="fas fa-utensils"></i> Memasak</h3>
+            <p>Saya suka memasak karena bisa berkreasi dengan berbagai resep dan memberikan kebahagiaan lewat makanan.</p>
+
+            <h3><i class="fas fa-tv"></i> Menonton Asmara Genz</h3>
+            <p>Menonton Asmara Genz menjadi hiburan favorit saya sekaligus memberi inspirasi dalam keseharian.</p>
+
+            <h3><i class="fas fa-plane"></i> Jalan-jalan</h3>
+            <p>Saya gemar jalan-jalan untuk mencari pengalaman baru, refreshing, dan menambah wawasan dari berbagai tempat.</p>
+          </div>
+
+          <div id="experience" class="tab-content">
+            <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+            <p>Berpengalaman dalam membuat website portofolio, dashboard, dan sistem e-learning.</p>
+            <h3><i class="fas fa-paint-brush"></i> UI/UX Design</h3>
+            <p>Mendesain antarmuka pengguna yang menarik dan mudah digunakan.</p>
+          </div>
+
+          <div id="education" class="tab-content">
+            <h3><i class="fas fa-graduation-cap"></i> Pendidikan</h3>
+            <ul>
+              <li>
+                <strong>2023 – Sekarang</strong><br>
+                Universitas Lampung<br>
+                Program Studi Teknik Informatika
+              </li>
+              <li>
+                <strong>2020 – 2023</strong><br>
+                SMA Negeri 1 Pesisir Selatan<br>
+                Jurusan IPA
+              </li>
+              <li>
+                <strong>2017 – 2020</strong><br>
+                SMP Negeri 13 Krui
+              </li>
+              <li>
+                <strong>2011 – 2017</strong><br>
+                SD Negeri 1 Biha
+              </li>
+            </ul>
+
+            <h3><i class="fas fa-users"></i> Pengalaman Organisasi</h3>
+            <ul>
+              <li><strong>OSIS SMA (2022)</strong> – Seksi Bidang Pendidikan, Berorganisasi, Politik, dan Kepemimpinan</li>
+              <li><strong>Fossi FT (2025)</strong> – Sekretaris Divisi</li>
+              <li><strong>IKAMM Pesisir Barat (2023–2025)</strong> – Staff Minat dan Bakat</li>
+              <li><strong>Lampung Sikam (2025)</strong> – Bendahara II</li>
+              <li><strong>Himpunan Mahasiswa Jurusan Teknik Elektro</strong> – Pengurus Inti</li>
+              <li><strong>BEM FT Unila (2024)</strong> – Staf PSDM</li>
+              <li><strong>BEM Universitas Lampung (2025)</strong> – Staf PSDM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Achievements Section -->
+  <section class="achievements" id="achievements">
+    <div class="container">
+      <h2 class="section-title">PENCAPAIAN SAYA</h2>
+      <div class="achievements-grid">
+        
+        <div class="achievement-card">
+          <img src="img/etos.png" alt="Project Etos" class="achievement-img">
+          <div class="achievement-content">
+            <h3>ETOS-ID Lampung</h3>
+            <p>Menjadi salah satu penerima Etos ID Lampung Angkatan 23, sebuah program prestisius yang berfokus pada pengembangan karakter, kepemimpinan, dan kontribusi nyata bagi masyarakat.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <img src="img/fossi.png" alt="Project Fossil" class="achievement-img">
+          <div class="achievement-content">
+            <h3>FOSSI FT UNILA</h3>
+            <p>Berperan sebagai Sekretaris Media Informasi FOSSI, mengelola komunikasi digital dan publikasi media dengan strategi kreatif untuk membangun citra organisasi yang profesional dan inspiratif.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <img src="img/rinova.png" alt="Project Rinova" class="achievement-img">
+          <div class="achievement-content">
+            <h3> RINOVA</h3>
+            <p>Dengan semangat inovasi, saya berhasil merancang alat pendeteksi dini tsunami dalam ajang yang diselenggarakan oleh BCA. Karya ini tidak hanya menghadirkan solusi teknologi kebencanaan, tetapi juga mengantarkan saya meraih Juara 2, sebuah pencapaian yang menjadi motivasi untuk terus berkarya demi keselamatan masyarakat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2 class="section-title">Galeri Foto</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="img/poto1.png" alt="Project Rinova" class="gallery-img">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus fa-2x"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/poto2.png" alt="Project Rinova" class="gallery-img">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus fa-2x"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/poto3.png" alt="Project Rinova" class="gallery-img">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus fa-2x"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/poto4.png" alt="Project Rinova" class="gallery-img">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus fa-2x"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/poto5.png" alt="Project Rinova" class="gallery-img">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus fa-2x"></i>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://placehold.co/300x300/FADADD/666?text=Foto+6" alt="Gallery 6">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus fa-2x"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Hubungi Saya</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Informasi Kontak</h3>
+          <p><i class="fas fa-envelope"></i> cindypujilestari8@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +62 85758305912</p>
+          <p><i class="fas fa-map-marker-alt"></i> Bandar Lampung, Indonesia</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <label for="name">Nama</label>
+              <input type="text" id="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Cindy Puji Lestari. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
