@@ -8,7 +8,7 @@ Website ini dibuat sebagai showcase pribadi untuk memperlihatkan profil, pencapa
 
 - Nama proyek : Portfolio Cindy Puji Lestari
 - Pemilik : Cindy Puji Lestari
-- Tipe : Static website (HTML, CSS, Font Awesome, Google Fonts)
+- Tipe : Static website (HTML, CSS)
 - Lokasi file utama : `portofoliocindy.html`
 - Tujuan : Menampilkan profil personal, pendidikan, pengalaman organisasi, pencapaian, foto galeri, dan kontak.
 
@@ -25,9 +25,6 @@ Website ini dibuat sebagai showcase pribadi untuk memperlihatkan profil, pencapa
 
 - HTML5
 - CSS3 (variabel CSS, responsive media queries)
-- Font Awesome untuk ikon
-- Google Fonts (Playfair Display, Quicksand, Dancing Script)
-- (Opsional) JavaScript untuk interaksi tambahan — `script.js` tidak ada saat ini.
 
 ## Struktur proyek
 
@@ -82,7 +79,6 @@ Tips: Jika Anda ingin menggunakan nama domain kustom, tambahkan file `CNAME` ses
 
 ## Hal yang perlu diperhatikan (catatan teknis)
 
-- `script.js` dirujuk di HTML, tetapi file tersebut belum ada di repositori. Jika Anda membutuhkan perilaku JavaScript (mis. mobile menu toggle, animasi, atau pengiriman form), tambahkan `script.js` dan link di HTML.
 - Pastikan semua gambar di folder `img/` ada dan memiliki ukuran yang sesuai untuk performa.
 - Form kontak saat ini statis — untuk menerima pesan, tambahkan backend sederhana (mis. Netlify Forms, Formspree, atau server sendiri).
 
@@ -119,7 +115,6 @@ Jika perlu bantuan lebih lanjut atau ingin saya bantu menambahkan fitur (mis. Ja
 
 Terima kasih telah membagikan portofolio Anda — website ini sudah terlihat sangat rapi dan estetik. Jika mau, saya bisa:
 - Tambahkan file `LICENSE` (MIT).
-- Buat `script.js` kecil untuk mobile menu dan tab JS fallback.
 - Bantu menyiapkan GitHub Actions untuk deploy otomatis ke GitHub Pages.
 
 Beritahu saya mana yang mau Anda lanjutkan.
