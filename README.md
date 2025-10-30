@@ -18,7 +18,7 @@ Website ini dibuat sebagai showcase pribadi untuk memperlihatkan profil, pencapa
 - Bagian "Tentang Saya" dengan tab Hobi, Pengalaman, dan Pendidikan (CSS-only tabs).
 - Bagian Pencapaian (achievements) dengan kartu proyek.
 - Galeri foto responsif.
-- Form kontak statis (HTML form — perlu backend jika ingin menerima pesan).
+- Form kontak statis.
 - Desain responsif untuk berbagai ukuran layar.
 
 ## Teknologi yang digunakan
@@ -60,16 +60,13 @@ git init
 git add .
 git commit -m "Initial commit: portfolio Cindy"
 git branch -M main
-# ganti <URL-REPO> dengan URL repository Anda, contoh: https://github.com/username/portofoliocindy.git
-git remote add origin <URL-REPO>
+git remote add origin https://github.com/CindyPL25/portofoliocindypujilestari.git
 git push -u origin main
 ```
 
 3. Aktifkan GitHub Pages di repository:
    - Buka Settings -> Pages -> Source -> pilih branch `main` dan folder `/ (root)` -> Save.
    - Setelah beberapa menit, website akan tersedia di `https://<username>.github.io/<repo>/`.
-
-Tips: Jika Anda ingin menggunakan nama domain kustom, tambahkan file `CNAME` sesuai instruksi GitHub Pages.
 
 ## Cara berkontribusi
 
