@@ -1,6 +1,6 @@
 # Portfolio - Cindy Puji Lestari
 
-Selamat datang di repositori portofolio Cindy Puji Lestari — sebuah website portofolio personal yang dirancang dengan estetika pastel, layout responsif, dan struktur sederhana sehingga mudah dipelihara dan dipublikasikan.
+Selamat datang di repositori portofolio Cindy Puji Lestari sebuah website portofolio personal yang dirancang dengan estetika pastel, layout responsif, dan struktur sederhana sehingga mudah dipelihara dan dipublikasikan.
 
 Website ini dibuat sebagai showcase pribadi untuk memperlihatkan profil, pencapaian, galeri, dan informasi kontak.
 
@@ -36,24 +36,18 @@ portofolio/                      # root project
 ├─ img/                          # folder gambar (foto, ikon proyek, dsb)
 ```
 
-## Cara menjalankan secara lokal (menggunakan XAMPP)
+## Dokumentasi Halaman
 
-1. Pastikan XAMPP terpasang dan Apache berjalan.
-2. Salin/move folder proyek (`portofolio`) ke dalam folder `htdocs` XAMPP. Contoh path pada mesin Windows:
-
-```powershell
-# contoh (jalankan di PowerShell) - adaptasikan paths sesuai lokasi Anda
-# pindah folder proyek ke htdocs jika belum berada di sana
-Move-Item -Path "C:\path\ke\proyek\portofolio" -Destination "C:\xampp\htdocs\"
-```
-
-3. Buka browser dan akses:
-
-```
-http://localhost/portofolio/portofoliocindy.html
-```
-
-Catatan: Anda juga bisa membuka file langsung (double click pada `portofoliocindy.html`) tapi beberapa fitur (mis. fetch API atau request relatif) lebih andal melalui server lokal.
+1. **Beranda**
+   ![Halaman beranda](img/beranda.png)
+2. **Tentang Saya**
+   ![Halaman tentang saya](img/tentangsaya.png)
+3. **Pencapaian**
+   ![Halaman pencapaian](img/pencapaian.png)
+4. **Galeri**
+   ![Halaman galeri](img/galeri.png)
+5. **Kontak**
+   ![Halaman kontak](img/kontak.png)
 
 ## Cara publish ke GitHub (GitHub Pages)
 
@@ -77,19 +71,6 @@ git push -u origin main
 
 Tips: Jika Anda ingin menggunakan nama domain kustom, tambahkan file `CNAME` sesuai instruksi GitHub Pages.
 
-## Hal yang perlu diperhatikan (catatan teknis)
-
-- Pastikan semua gambar di folder `img/` ada dan memiliki ukuran yang sesuai untuk performa.
-- Form kontak saat ini statis — untuk menerima pesan, tambahkan backend sederhana (mis. Netlify Forms, Formspree, atau server sendiri).
-
-## Memperbaiki masalah tab (studi kasus)
-
-Jika tab di bagian "Tentang Saya" tidak menampilkan isinya, penyebab yang umum:
-- Struktur input radio dan konten tidak menjadi sibling yang sesuai dengan selector CSS.
-- CSS men-set `.tab-content { display: none }` dan selector `#tab-hobby:checked ~ #hobby` membutuhkan input radio menjadi sibling langsung dari `#hobby`.
-
-Solusi: Pastikan input radio berada di luar container label (sebagai sibling langsung terhadap `#hobby`, `#experience`, dan `#education`) atau gunakan JavaScript untuk meng-handle aktivasi tab.
-
 ## Cara berkontribusi
 
 Jika Anda ingin membantu meningkatkan website ini:
@@ -101,20 +82,10 @@ Jika Anda ingin membantu meningkatkan website ini:
 
 Mohon sertakan screenshot atau penjelasan singkat untuk perubahan desain.
 
-## Lisensi
-
-Jika Anda ingin lisensi permissive, saya merekomendasikan MIT. Bila Anda setuju, saya bisa tambahkan file `LICENSE`.
-
 ## Kontak
 
-Jika perlu bantuan lebih lanjut atau ingin saya bantu menambahkan fitur (mis. JavaScript untuk tab + menu, atau setup deployment otomatis), hubungi:
+Jika perlu bantuan lebih lanjut atau ingin saya menambahkan fitur, hubungi:
 
 - Email: cindypujilestari8@gmail.com
 
 ---
-
-Terima kasih telah membagikan portofolio Anda — website ini sudah terlihat sangat rapi dan estetik. Jika mau, saya bisa:
-- Tambahkan file `LICENSE` (MIT).
-- Bantu menyiapkan GitHub Actions untuk deploy otomatis ke GitHub Pages.
-
-Beritahu saya mana yang mau Anda lanjutkan.
