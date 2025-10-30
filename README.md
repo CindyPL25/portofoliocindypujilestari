@@ -118,3 +118,27 @@ Terima kasih telah membagikan portofolio Anda — website ini sudah terlihat san
 - Bantu menyiapkan GitHub Actions untuk deploy otomatis ke GitHub Pages.
 
 Beritahu saya mana yang mau Anda lanjutkan.
+
+## Gambar Dokumentasi (keterangan gambar + gambar saja)
+
+Tempat untuk menaruh gambar dokumentasi tiap halaman. Format: satu baris keterangan singkat (nama file), lalu baris gambar. Anda yang akan mengisi gambar di folder `img/docs/<halaman>/`.
+
+### Home
+home-1.png
+![home-1](img/docs/home/home-1.png)
+
+### About
+about-1.png
+![about-1](img/docs/about/about-1.png)
+
+### Achievements
+achievements-1.png
+![achievements-1](img/docs/achievements/achievements-1.png)
+
+### Gallery
+gallery-1.png
+![gallery-1](img/docs/gallery/gallery-1.png)
+
+### Contact
+contact-1.png
+![contact-1](img/docs/contact/contact-1.png)
